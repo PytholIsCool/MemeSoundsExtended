@@ -1,19 +1,18 @@
 /**
  * @name MemeSounds
- * @version 0.6.1
- * @description Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!
+ * @version 0.7.0
+ * @description Just Meme sounds diccord plugin by Lonk but I added more sounds.
  * @invite SsTkJAP3SE
- * @author Lonk#6942
- * @authorId 557388558017495046
- * @authorLink https://github.com/Lonk12/
- * @source https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js
+ * @author Pythol#9691
+ * @authorId 505458931200425988
+ * @authorLink https://github.com/PytholIsCool/
+ * @source https://github.com/PytholIsCool/MemeSoundsExtended/blob/main/MemeSounds/MemeSounds.plugin.js
  */
 
 module.exports = (() => {
 	
 	/* Configuration */
-	const config = { info: { name: "Meme Sounds Extended", authors: [{ name: "Lonk#6942", discord_id: "557388558017495046", github_username: "Lonk12", twitter_username: "wolfyypaw" }, { name: "FlyMaster#2642", discord_id: "459726660359553025", github_username: "Apceniy" }, { name: "Pythol#9691", discord_id: "505458931200425988"], version: "0.6.1", description: "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!", github: "https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js", github_raw: "https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["Added the vine boom sound effect when :moyai: is sent into chat.", "Thanks to Orangenal name#9280 for adding vine boom!"]}]};
+	const config = { info: { name: "Meme Sounds Extended", authors: [{ name: "Lonk#6942", discord_id: "557388558017495046", github_username: "Lonk12", twitter_username: "wolfyypaw" }, { name: "FlyMaster#2642", discord_id: "459726660359553025", github_username: "Apceniy" }, { name: "Pythol#9691", discord_id: "505458931200425988"], version: "0.6.1", description: "Just Meme sounds diccord plugin but I added more sounds.", github: "https://github.com/PytholIsCool/MemeSoundsExtended/blob/main/MemeSounds/MemeSounds.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["Added Skeddadle, fart, piss, gay, and amogus.", "I don't even know if this is gonna work lol."]}]};
 
 	/* Library Stuff */
 	return !global.ZeresPluginLibrary ? class {
