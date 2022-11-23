@@ -1,0 +1,24 @@
+{
+    "info": {
+        "name": "MemeSoundsExtended",
+        "authors": [
+            {
+                "name": "Pythol#9691",
+                "discord_id": "505458931200425988",
+                "github_username": "Pythol",
+                "twitter_username": "N/A"
+            }
+        ],
+        "version": "0.6.1",
+        "description": "Uses wolfyypaw12's Meme sound mod as a base. Just added A few more sounds.'",
+        "github": "https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js",
+        "github_raw": "https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"
+    },
+    "changelog": [
+        {"title": "New Stuff", "items": ["Added the vine boom sound effect when :moyai: is sent in chat!", "Added changelog!"]},
+        {"title": "Bugs Squashed", "type": "fixed", "items": ["No bugs *yet*."]},
+        {"title": "Improvements", "type": "improved", "items": ["Improvements to the response time!"]},
+        {"title": "On-going", "type": "progress", "items": ["More sounds being added :)", "Other"]}
+    ],
+    "main": "MemeSounds.index.js"
+}
